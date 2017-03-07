@@ -1,0 +1,10 @@
+com.intel.icecp.module.query
+com.intel.icecp.module.storage
+com.intel.icecp.module.storage.ack
+com.intel.icecp.module.storage.attributes
+com.intel.icecp.module.storage.exceptions
+com.intel.icecp.module.storage.messages
+com.intel.icecp.module.storage.persistence
+com.intel.icecp.module.storage.persistence.orientdb
+com.intel.icecp.module.storage.persistence.providers
+com.intel.icecp.module.storage.util
