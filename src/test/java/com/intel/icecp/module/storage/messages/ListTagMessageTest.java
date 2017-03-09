@@ -65,8 +65,6 @@ public class ListTagMessageTest {
     private Set<String> actualReturnSet;
 
     @Mock
-    Node mockDeapNode;
-    @Mock
     StorageModule mockStorageModule;
     @Mock
     StorageProvider mockStorageProvider;

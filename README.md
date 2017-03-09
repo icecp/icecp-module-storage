@@ -2,8 +2,8 @@
 
 This module is used to store information permanently to disk; currently the only DB implementation is OrientDB, but other implementations are 
 possible (e.g. relational, document, etc.). The data to store arrive as messages on a configured channel (see _Commands_) and their assigned 
-IDs are published on an acknowledgment channel (see _Attributes_). Additionally, messages are grouped together in [sessions](https://github.intel.com/iSPA/icecp-module-storage/wiki/Session-Lifecycle)
-and can be [tagged](https://github.intel.com/iSPA/icecp-module-storage/wiki/Tagging).
+IDs are published on an acknowledgment channel (see _Attributes_). Additionally, messages are grouped together in [sessions](https://github.com/icecp/icecp-module-storage/wiki/Session-Lifecycle)
+and can be [tagged](https://github.com/icecp/icecp-module-storage/wiki/Tagging).
 
 
 ### Install
@@ -21,12 +21,12 @@ Clone this repository and run: `mvn install`. Optionally, for troubleshooting, y
    
 ### Run
 
-Use [icecp-tools](https://github.intel.com/iSPA/icecp-tools) to load the module in a running [icecp-node](https://github.intel.com/iSPA/icecp-node)
+Use [icecp-tools](https://github.com/icecp/icecp-tools) to load the module in a running [icecp-node](https://github.com/icecp/icecp-node)
 
 
 ### Commands
 
-The storage module receives commands using [icecp-rpc](https://github.intel.com/iSPA/icecp-rpc). The following commands can be sent:
+The storage module receives commands using [icecp-rpc](https://github.com/icecp/icecp-rpc). The following commands can be sent:
 - **start** - Start a new session that will listen to a channel and store all messages published on that channel in the DB
 - **get** - Retrieve messages by session and publish them to a designated replay channel
 - **getTimeSpan** - Get the timestamp range (min and max) for active messages on a specified channel
@@ -42,7 +42,7 @@ The storage module receives commands using [icecp-rpc](https://github.intel.com/
 - **deleteSession** - Delete all messages related to a session
 - **deleteMessagesByRange** - Delete all messages between a start and end ID (this relies on the assumption that message IDs assigned by the DB increase)
 
-See [Commands](https://github.intel.com/iSPA/icecp-module-storage/wiki/Commands) wiki page for more information.
+See [Commands](https://github.com/icecp/icecp-module-storage/wiki/Commands) wiki page for more information.
 
 
 ### Attributes
@@ -61,8 +61,8 @@ An Acknowledgment Message or an `AckMessage` for every message that was successf
 
 
 ### Documentation
- - [Javadoc](https://github.intel.com/pages/iSPA/icecp-module-storage/)
- - [Wiki](https://github.intel.com/iSPA/icecp-module-storage/wiki)
+ - [Javadoc](https://icecp.github.io/icecp-module-storage/)
+ - [Wiki](https://github.com/icecp/icecp-module-storage/wiki)
 
 
 ### License
